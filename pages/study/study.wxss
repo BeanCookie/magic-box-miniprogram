@@ -1,1 +1,48 @@
 /**index.wxss**/
+.t-search__input-box--round {
+  border-radius: 20rpx;
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+.t-tabs-horizontal > t-tab-panel {
+  text-align: center;
+  justify-content: center;
+  height: 172rpx;
+  line-height: 172rpx;
+  color: rgba(0, 0, 0, 0.26);
+}
+
+.scroll-item-horizontal {
+  height: 92rpx;
+  line-height: 92rpx;
+}
+
+.scroll-item-vertical {
+  line-height: 108rpx;
+  height: 108rpx;
+  width: 208rpx;
+}
+
+.active-item {
+  font-size: 32rpx;
+}
+
+.scroll-item-vertical {
+  background-color: rgba(243, 243, 243, 1);
+}
+
+.tabs-vertical-active {
+  background-color: #fff;
+}
+
+.loading-container-flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center；;
+}
+
+.indicator-blue {
+  color: #0052d9;
+}

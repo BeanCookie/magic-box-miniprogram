@@ -4,6 +4,7 @@
   "description": "一刻资讯",
   "main": ".eslintrc.js",
   "dependencies": {
+    "miniprogram-request": "^5.3.0-alpha.0",
     "tdesign-miniprogram": "^0.3.0"
   },
   "devDependencies": {},

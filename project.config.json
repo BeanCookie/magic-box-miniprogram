@@ -47,7 +47,7 @@
         "useCompilerPlugins": false
     },
     "compileType": "miniprogram",
-    "libVersion": "2.19.6",
+    "libVersion": "2.21.2",
     "appid": "wx7424c698eadc8a85",
     "projectname": "magic-box",
     "debugOptions": {

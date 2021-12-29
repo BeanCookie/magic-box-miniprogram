@@ -1,6 +1,7 @@
 {
   "pages":[
     "pages/study/study",
+    "pages/study/article",
     "pages/hotspot/hotspot"
   ],
   "window":{
