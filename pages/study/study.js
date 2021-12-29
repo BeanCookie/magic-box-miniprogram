@@ -80,7 +80,6 @@ Page({
     .catch(err=>wx.showToast({title:'数据拉取失败'}));
   },
   onTabsChange(e) {
-    console.log(e)
     this.setData({
       tabValue: e.detail.index
     })
@@ -106,16 +105,17 @@ Page({
   },
   touchMove(e) {
     if (e.touches.length == 1) {
-      var moveX = e.touches[0].clientX;
-      var towards = this.data.startX - moveX;
+      const moveX = e.touches[0].clientX
+      const towards = this.data.startX - moveX
       this.setData({
         towards: towards
       })
     }
   },
   touchEnd(e) {
-    if (this.data.towards != '') {
-      if (this.data.towards < 0) {//向右
+    if (this.data.towards != null) {
+      if (this.data.towards < 0) {
+        // 向右
         if (this.data.tabValue > 0) {
           this.setData({
             tabValue: this.data.tabValue - 1
@@ -123,7 +123,8 @@ Page({
 
           this.fetchData()
         }
-      } else if (this.data.towards > 0) {//向左
+      } else if (this.data.towards > 0) { 
+        // 向左
         if (this.data.tabValue < this.data.tabs.length - 1) {
           this.setData({
             tabValue: this.data.tabValue + 1
@@ -133,7 +134,6 @@ Page({
         }
       }
     }
-    console.log(this.data.tabValue);
     this.setData({
       towards: null
     })
