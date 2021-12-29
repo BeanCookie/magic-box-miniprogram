@@ -10,5 +10,4 @@
   <t-loading theme="circular" size="40rpx" loading="{{loading}}" t-class="loading-container-flex" t-class-indicator="indicator-blue">
     <span slot="text">加载中...</span>
   </t-loading>
-  <t-back-top theme="round" text="顶部"></t-back-top>
 </view>
