@@ -1,0 +1,15 @@
+{
+  "name": "magic-box-miniprogram",
+  "version": "1.0.0",
+  "description": "一刻资讯",
+  "main": ".eslintrc.js",
+  "dependencies": {
+    "tdesign-miniprogram": "^0.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LuZhong",
+  "license": "ISC"
+}

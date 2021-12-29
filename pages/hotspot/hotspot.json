@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "热点",
+  "usingComponents": {
+    "t-button": "tdesign-miniprogram/button/button"
+  }
+}

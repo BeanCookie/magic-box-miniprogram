@@ -1,0 +1,5 @@
+/**index.wxss**/
+.title-image-large {
+  width: 256rpx;
+  height: 256rpx;
+}

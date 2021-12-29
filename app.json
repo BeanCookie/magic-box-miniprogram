@@ -1,13 +1,33 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/study/study",
+    "pages/hotspot/hotspot"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#6e6d6b",
+    "selectedColor": "#e64340",
+    "borderStyle": "white",
+    "backgroundColor": "#fff",
+    "list": [
+      {
+        "pagePath": "pages/study/study",
+        "iconPath": "assets/tab-bar/study.png",
+        "selectedIconPath": "assets/tab-bar/study_selected.png",
+        "text": "学习"
+      },
+      {
+        "pagePath": "pages/hotspot/hotspot",
+        "iconPath": "assets/tab-bar/hotspot.png",
+        "selectedIconPath": "assets/tab-bar/hotspot_selected.png",
+        "text": "热点"
+      }
+    ]
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"

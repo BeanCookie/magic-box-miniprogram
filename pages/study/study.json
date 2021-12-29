@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "学习",
+  "usingComponents": {
+    "t-tabs": "tdesign-miniprogram/tabs/tabs",
+    "t-tab-panel": "tdesign-miniprogram/tabs/tab-panel",
+    "t-back-top": "tdesign-miniprogram/back-top/back-top",
+
+    "articles": "/components/articles/articles"
+  }
+}
