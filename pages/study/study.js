@@ -56,7 +56,6 @@ Page({
     .catch(err=>wx.showToast({title:'数据拉取失败'}));
   },
   onLoad() {
-    console.log(CONSTANT);
     this.fetchData()
   },
   onReachBottom() {
@@ -91,51 +90,10 @@ Page({
       page: 1,
     })
     this.fetchData()
+    const { callback } = e.detail.detail
+    callback()
   },
   onSubmit(e) {
     console.log(e);
-  },
-
-  touchStart(e) {
-    if (e.touches.length == 1) {
-      this.setData({
-        startX: e.touches[0].clientX
-      });
-    }
-  },
-  touchMove(e) {
-    if (e.touches.length == 1) {
-      const moveX = e.touches[0].clientX
-      const towards = this.data.startX - moveX
-      this.setData({
-        towards: towards
-      })
-    }
-  },
-  touchEnd(e) {
-    if (this.data.towards != null) {
-      if (this.data.towards < 0) {
-        // 向右
-        if (this.data.tabValue > 0) {
-          this.setData({
-            tabValue: this.data.tabValue - 1
-          })
-
-          this.fetchData()
-        }
-      } else if (this.data.towards > 0) { 
-        // 向左
-        if (this.data.tabValue < this.data.tabs.length - 1) {
-          this.setData({
-            tabValue: this.data.tabValue + 1
-          })
-         
-          this.fetchData()
-        }
-      }
-    }
-    this.setData({
-      towards: null
-    })
   },
 })

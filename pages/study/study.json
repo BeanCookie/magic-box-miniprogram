@@ -4,6 +4,7 @@
     "t-tabs": "tdesign-miniprogram/tabs/tabs",
     "t-tab-panel": "tdesign-miniprogram/tabs/tab-panel",
     "t-search": "tdesign-miniprogram/search/search",
+    "t-back-top": "tdesign-miniprogram/back-top/back-top",
     "t-loading": "tdesign-miniprogram/loading/loading",
     
     "articles": "/components/articles/articles"

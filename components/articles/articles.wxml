@@ -1,7 +1,9 @@
 <view>
-  <t-pull-down-refresh id="pull-down-refresh" normal-bar-height="{{200}}" max-bar-height="{{272}}" refreshTimeout="{{500}}" background="#f5f5f5" use-loading-slot loading-size="60rpx" loading-texts="{{['下拉刷新', '松手刷新', '正在刷新', '刷新完成', '']}}" bindrefresh="onPullDownRefresh">
+  <t-pull-down-refresh t-class-indicator="indicator-blue" id="pull-down-refresh" background="#f5f5f5" loading-texts="{{['下拉刷新', '松手刷新', '正在刷新', '刷新完成', '']}}" bindrefresh="onPullDownRefresh">
     <view wx:for="{{articles}}" wx:for-index="id" wx:for-item="article">
-      <t-cell hover="{{true}}" title="{{article.title}}" align="top" description="{{article.brief_content}}" t-class-image="title-image-large" jump-type="{{redirect-to}}" image="{{article.cover_image}}" data-article="{{article}}" bind:click="onClick"></t-cell>
+      <t-cell hover="{{true}}" title="{{article.title}}" description="{{article.parst_time}}" t-class-image="title-image-large" image="{{article.cover_image}}" data-article="{{article}}" bind:click="onClick">
+        <t-badge visible="true" size="medium" maxCount="{{9999}}" offset="{{[-100, 100]}}" shape="ribbon" count="{{article.view_count}}" slot="note"></t-badge>
+      </t-cell>
     </view>
   </t-pull-down-refresh>
 </view>

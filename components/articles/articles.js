@@ -1,6 +1,7 @@
 const CONSTANT = require('../../utils/constant')
 
 Component({
+  pullDownRefresh: null,
   properties: {
     articles: {
       type: Array,
@@ -9,9 +10,12 @@ Component({
     platform: {
       type: String,
       value: null
-    }
+    },
   },
   methods: {
+    onload() {
+      this.pullDownRefresh = this.selectComponent('#pull-down-refresh');
+    },
     onClick(e) {
       const article = e.currentTarget.dataset.article
       const platform = this.properties.platform

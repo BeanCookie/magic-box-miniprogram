@@ -6,6 +6,7 @@
 >
   <view class="{{classPrefix}}__left t-class-left">
     <image
+      mode="widthFix"
       wx:if="{{ image }}"
       class="{{classPrefix}}__left-image t-class-image"
       src="{{ image }}"

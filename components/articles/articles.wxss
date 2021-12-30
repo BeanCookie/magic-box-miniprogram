@@ -1,5 +1,8 @@
 /**index.wxss**/
 .title-image-large {
   width: 256rpx;
-  height: 256rpx;
+}
+
+.indicator-blue {
+  color: #0052d9;
 }

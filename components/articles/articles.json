@@ -2,6 +2,7 @@
   "component": true,
   "usingComponents": {
     "t-cell": "tdesign-miniprogram/cell/cell",
-    "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh"
+    "t-pull-down-refresh": "tdesign-miniprogram/pull-down-refresh/pull-down-refresh",
+    "t-badge": "tdesign-miniprogram/badge/badge"
   }
 }
