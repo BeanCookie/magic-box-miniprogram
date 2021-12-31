@@ -27,7 +27,7 @@ Page({
       // },
     ],
     animation: { duration: 0.3 },
-    platform: "juejin",
+    platform: CONSTANT.JUEJIN,
     tabValue: 0,
     page: 1,
     articles: null,

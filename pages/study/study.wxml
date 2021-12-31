@@ -1,5 +1,5 @@
 <!-- index.wxml -->
-<view>
+<view class="container">
   <t-search center="{{true}}" shape="round" placeholder="搜索文章" bind:submit="onSubmit" />
   <t-tabs value="{{0}}" t-class-item="scroll-item-horizontal" t-class="t-tabs-horizontal" t-class-active="active-item" animation="{{animation}}" bind:change="onTabsChange">
     <t-tab-panel wx:for="{{tabs}}" wx:for-index="value" wx:for-item="tab" label="{{tab.label}}" value="{{tab.value}}">

@@ -13,6 +13,10 @@
   color: rgba(0, 0, 0, 0.26);
 }
 
+.tabs-vertical-active {
+  background-color: #fff;
+}
+
 .scroll-item-horizontal {
   height: 92rpx;
   line-height: 92rpx;
@@ -30,10 +34,6 @@
 
 .scroll-item-vertical {
   background-color: rgba(243, 243, 243, 1);
-}
-
-.tabs-vertical-active {
-  background-color: #fff;
 }
 
 .loading-container-flex {

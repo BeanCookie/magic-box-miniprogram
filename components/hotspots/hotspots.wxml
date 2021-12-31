@@ -1,0 +1,9 @@
+<view>
+  <t-pull-down-refresh t-class-indicator="indicator-blue" id="pull-down-refresh" background="#f5f5f5" loading-texts="{{['下拉刷新', '松手刷新', '正在刷新', '刷新完成', '']}}" bindrefresh="onPullDownRefresh">
+    <view wx:for="{{hotspots}}" wx:for-index="id" wx:for-item="hotspot">
+      <t-cell hover="{{true}}" title="{{hotspot.key_word}}" description="{{hotspot.brief_content}}" t-class-image="title-image-large" image="{{hotspot.cover_image}}" data-hotspot="{{hotspot}}" bind:click="onClick">
+        <t-badge visible="true" size="medium" maxCount="{{999999}}" offset="{{[-100, 100]}}" shape="ribbon" count="{{hotspot.raw_hot}}" slot="note"></t-badge>
+      </t-cell>
+    </view>
+  </t-pull-down-refresh>
+</view>
