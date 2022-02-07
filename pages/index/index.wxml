@@ -1,4 +1,0 @@
-<!-- index.wxml -->
-<view class="container">
-  <t-button theme="primary" size="large">强按钮</t-button>
-</view>
